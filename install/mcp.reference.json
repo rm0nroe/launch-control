@@ -1,0 +1,25 @@
+{
+  "_comment": "Secret-free reference MCP config for Launch Control skills. Add personal servers with claude mcp add --scope user, or copy shared servers into a project .mcp.json. GitHub and Atlassian are authenticated remote integrations; use Claude Code /mcp to complete their user authentication. shadcn and chrome-devtools are local stdio servers launched with npx and do not use remote OAuth. Do NOT hardcode tokens here.",
+  "mcpServers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "_used_by": "launch, log-decision, PR workflows"
+    },
+    "atlassian": {
+      "type": "sse",
+      "url": "https://mcp.atlassian.com/v1/sse",
+      "_used_by": "log-decision, research-questions, catalog (Jira/Confluence)"
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/claude-code-mcp-shadcn@latest"],
+      "_used_by": "component search for UI work in onboarded projects"
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"],
+      "_used_by": "optional web/E2E verification"
+    }
+  }
+}

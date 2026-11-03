@@ -1,0 +1,94 @@
+name: Bug report
+description: Something in the pack, the installer, or a generated workspace behaves wrong
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report a security vulnerability here — use
+        [private reporting](https://github.com/rm0nroe/launch-control/security/advisories/new)
+        instead. See `SECURITY.md`.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: The observed behavior, and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: >
+        The exact commands, in order. Include the shape of the target repository
+        where it matters — size, symlinks, unreadable paths, existing `.claude/`
+        content, whether the worktree was dirty.
+      placeholder: |
+        1. ./install.sh --force
+        2. cd <target repo>
+        3. /onboard
+        4. ...
+      render: shell
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - install.sh
+        - /onboard (discovery, generation, or merge)
+        - completion guard / run report
+        - generated .claude/settings.json permissions
+        - CRISPY delivery skills
+        - tools/validate-pack.sh
+        - documentation
+        - not sure
+    validations:
+      required: true
+
+  - type: input
+    id: commit
+    attributes:
+      label: Launch Control commit
+      description: "`git rev-parse --short HEAD` in your Launch Control checkout."
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: >
+        OS and version, plus `bash --version | head -1`, `git --version`,
+        `jq --version`, and `rg --version | head -1`.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: validation
+    attributes:
+      label: New untracked paths
+      description: >
+        Output of `./tools/validate-pack.sh`, and of `./tools/preflight-onboard.sh`
+        if the bug involves a live `/onboard` run. Paste the failing portion, and
+        redact local paths you would rather not publish.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: report
+    attributes:
+      label: Run report
+      description: >
+        For an `/onboard` bug, the run report block — ledger counts, the
+        `Failed`/`Next:` lines, and the run id. Redact paths you would rather
+        not publish.
+      render: text
+    validations:
+      required: false

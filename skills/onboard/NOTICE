@@ -1,0 +1,18 @@
+Launch Control
+Copyright 2026 Ryan Monroe
+
+This skill (the `onboard` skill) is Launch Control original material, licensed under
+the Apache License, Version 2.0. See the adjacent LICENSE file for the full terms.
+
+The HTML report embeds separately licensed Anton, Barlow Condensed, and IBM Plex
+Mono fonts under the SIL Open Font License 1.1. Their full copyright and license
+notices ship in assets/ANTON-OFL.txt, assets/BARLOW-OFL.txt, and
+assets/IBMPlexMono-OFL.txt, and in the font-licenses template block within
+assets/completion-report.html. Retain these notices when redistributing the skill
+or standalone HTML report. The fonts are not covered by the Apache license.
+The complete distribution's component boundary is documented in its NOTICE and
+PROVENANCE.md files.
+
+Source: https://github.com/rm0nroe/launch-control (Launch Control distribution)
+
+This NOTICE does not remove, replace, or broaden any license terms.

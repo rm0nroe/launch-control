@@ -1,0 +1,7 @@
+{
+  "cases": [
+    { "name": "clean-primary", "action": "create-linked-worktree" },
+    { "name": "dirty-primary", "action": "create-linked-worktree-preserve-primary" },
+    { "name": "existing-linked-worktree", "action": "stay-in-linked-worktree" }
+  ]
+}

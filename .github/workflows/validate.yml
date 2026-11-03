@@ -1,0 +1,47 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate-pack:
+    name: validate-pack (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # validate-pack.sh needs bash, git, jq, node, shasum (or sha256sum), and ripgrep.
+      # git/jq/node/shasum ship on both runner images; ripgrep does not, so install it per OS.
+      - name: Install ripgrep (Linux)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y ripgrep
+
+      - name: Install ripgrep (macOS)
+        if: runner.os == 'macOS'
+        run: brew install ripgrep
+
+      - name: Show tool versions
+        run: |
+          bash --version | head -1
+          git --version
+          jq --version
+          node --version
+          rg --version | head -1
+          (command -v shasum && shasum --version | head -1) || sha256sum --version | head -1
+
+      # Run the suite against a throwaway CLAUDE_CONFIG_DIR so it never touches a real ~/.claude.
+      - name: Run validate-pack
+        run: |
+          CLAUDE_CONFIG_DIR="$(mktemp -d)"
+          export CLAUDE_CONFIG_DIR
+          ./tools/validate-pack.sh

@@ -1,0 +1,8 @@
+{
+  "cases": [
+    { "signal": "explicit-config", "activate": true },
+    { "signal": "paired-repository-evidence", "activate": true },
+    { "signal": "generic-dependency-only", "activate": false },
+    { "signal": "no-ai", "activate": false }
+  ]
+}
