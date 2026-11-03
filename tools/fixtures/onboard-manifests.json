@@ -1,0 +1,95 @@
+{
+  "policies": {
+    "commitSubjectMax": 150,
+    "commitSubjectSource": "default",
+    "prTitleMax": 72
+  },
+  "reservedProjectSkillNames": [
+    "code-review"
+  ],
+  "commands": {
+    "DETECTED_LINT_CMD": "./tools/validate-pack.sh",
+    "DETECTED_TYPECHECK_CMD": null,
+    "DETECTED_TEST_CMD": "./install.sh --dry-run",
+    "DETECTED_BUILD_CMD": null,
+    "DETECTED_DEPENDENCY_CHECK_CMD": null,
+    "DETECTED_LINT_FIX_CMD": null,
+    "DETECTED_FORMAT_CMD": null,
+    "DETECTED_BASE_BRANCH": "main"
+  },
+  "reviewLens": [
+    "- Review shell and installer changes for quoting, `set -euo pipefail`, and dry-run non-mutation. Evidence: `tools/validate-pack.sh`.",
+    "- Review generated Markdown for valid frontmatter, resolved template tokens, and narrow tool permissions. Evidence: `skills/onboard/references/artifact-templates.md`."
+  ],
+  "default": {
+    "required": [
+      ".claude/agents/inspector.md",
+      ".claude/agents/dispatcher.md",
+      ".claude/commands/commit.md",
+      ".claude/commands/explore.md",
+      ".claude/commands/pr.md",
+      ".claude/commands/status.md",
+      ".claude/commands/ticket.md",
+      ".claude/commands/validate.md",
+      ".claude/settings.json",
+      ".claude/skills/checkpoint-save/SKILL.md",
+      ".claude/skills/feature-development/SKILL.md",
+      ".claude/skills/checkpoint-load/SKILL.md",
+      ".claude/skills/pr-workflow/SKILL.md",
+      ".claude/skills/project-code-review/SKILL.md",
+      ".claude/skills/launch/SKILL.md",
+      ".claude/skills/launch/references/delivery.md",
+      ".claude/skills/launch/references/implementation.md",
+      ".claude/skills/launch/references/ticket-intake.md",
+      ".claude/skills/launch/references/verification.md",
+      ".claude/skills/checkpoint-list/SKILL.md",
+      ".claude/skills/systematic-debugging/SKILL.md",
+      ".claude/skills/testing-patterns/SKILL.md",
+      ".gitignore",
+      "CLAUDE.md",
+      "artifacts/architecture.md",
+      "artifacts/infrastructure.md"
+    ],
+    "forbidden": [],
+    "skipped": [
+      ".claude/commands/fix.md",
+      ".mcp.json",
+      ".claude/hooks/skill-eval.sh"
+    ]
+  },
+  "launch-control-maintenance": {
+    "required": [
+      ".claude/skills/launch/SKILL.md",
+      ".claude/skills/launch/references/delivery.md",
+      ".claude/skills/launch/references/implementation.md",
+      ".claude/skills/launch/references/ticket-intake.md",
+      ".claude/skills/launch/references/verification.md"
+    ],
+    "forbidden": [
+      ".claude/agents/",
+      ".claude/commands/",
+      ".claude/hooks/",
+      ".claude/settings.json",
+      ".claude/skills/project-code-review/",
+      ".claude/skills/feature-development/",
+      ".claude/skills/pr-workflow/",
+      ".claude/skills/systematic-debugging/",
+      ".claude/skills/testing-patterns/",
+      ".mcp.json",
+      "artifacts/",
+      "CLAUDE.md"
+    ]
+  },
+  "overlays": {
+    "mcp": {
+      "required": [
+        ".mcp.json"
+      ]
+    },
+    "hooks": {
+      "required": [
+        ".claude/hooks/skill-eval.sh"
+      ]
+    }
+  }
+}

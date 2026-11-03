@@ -1,0 +1,8 @@
+{
+  "default_tier": "sonnet",
+  "tiers": {
+    "haiku": {"model": "gpt-5.6-luna", "reasoning_effort": "low"},
+    "sonnet": {"model": "gpt-5.6-terra", "reasoning_effort": "medium"},
+    "opus": {"model": "gpt-6-astra", "reasoning_effort": "high"}
+  }
+}

@@ -1,0 +1,57 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate-pack:
+    name: validate-pack (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # validate-pack.sh needs bash, git, jq, node, shasum (or sha256sum), and ripgrep.
+      # git/jq/node/shasum ship on both runner images; ripgrep does not, so install it per OS.
+      # Linux takes the pinned, checksummed release binary from github.com: the Ubuntu package
+      # mirrors have been unreachable from runners for hours at a time, and checkout already
+      # depends on github.com. "Show tool versions" fails the job if rg is still missing.
+      - name: Install ripgrep (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          if command -v rg; then exit 0; fi
+          version=15.2.0
+          target=x86_64-unknown-linux-musl
+          curl -fsSL --retry 5 --retry-all-errors -o "$RUNNER_TEMP/rg.tgz" \
+            "https://github.com/BurntSushi/ripgrep/releases/download/$version/ripgrep-$version-$target.tar.gz"
+          echo "33e15bcf1624b25cdd2a55813a47a2f95dbe126268203e76aa6a585d1e7b149c  $RUNNER_TEMP/rg.tgz" | sha256sum -c -
+          sudo tar -xzf "$RUNNER_TEMP/rg.tgz" -C /usr/local/bin --strip-components=1 "ripgrep-$version-$target/rg"
+
+      - name: Install ripgrep (macOS)
+        if: runner.os == 'macOS'
+        run: brew install ripgrep
+
+      - name: Show tool versions
+        run: |
+          bash --version | head -1
+          git --version
+          jq --version
+          node --version
+          rg --version | head -1
+          (command -v shasum && shasum --version | head -1) || sha256sum --version | head -1
+
+      # Run the suite against a throwaway CLAUDE_CONFIG_DIR so it never touches a real ~/.claude.
+      - name: Run validate-pack
+        run: |
+          CLAUDE_CONFIG_DIR="$(mktemp -d)"
+          export CLAUDE_CONFIG_DIR
+          ./tools/validate-pack.sh

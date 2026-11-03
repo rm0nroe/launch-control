@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 520" width="1600" height="520" role="img" aria-label="Launch Control: onboarding and delivery kit">
+  <title>Launch Control</title>
+  <desc>A launch pad at ignition: the wordmark stands on the deck with its base lit, exhaust burning down into the pad, an ascent arc marked onboard, launch-ticket and launch-backlog, and a go/no-go poll of the gates every delivery passes.</desc>
+  <!-- Wordmark set in Anton (Anton Project Authors), SIL Open Font License 1.1, converted to outlines.
+       License text: assets/ANTON-OFL.txt -->
+  <defs>
+    <pattern id="h1" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#EDE6DA" stroke-opacity="0.08" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="h3" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="20" stroke="#C4562A" stroke-opacity="0.16" stroke-width="1.4"/>
+    </pattern>
+    <linearGradient id="ignite" x1="0" y1="330" x2="0" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8A33D"/><stop offset="1" stop-color="#C4562A"/>
+    </linearGradient>
+    <linearGradient id="plume" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8A33D" stop-opacity="0.75"/><stop offset="0.55" stop-color="#C4562A" stop-opacity="0.35"/><stop offset="1" stop-color="#C4562A" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A1A12"/><stop offset="1" stop-color="#120E0D"/>
+    </linearGradient>
+    <g id="wm"><g transform="translate(96.0 368.0) scale(0.08402053835381983)"><path d="M78.0 0.0V-1760.0H430.0V-300.0H792.0V0.0ZM844.0 0.0 1014.0 -1760.0H1611.0L1778.0 0.0H1445.0L1420.0 -284.0H1208.0L1186.0 0.0ZM1233.0 -565.0H1393.0L1316.0 -1460.0H1300.0ZM2293.0 16.0Q2073.0 16.0 1969.0 -107.5Q1865.0 -231.0 1865.0 -471.0V-1760.0H2207.0V-485.0Q2207.0 -441.0 2212.0 -400.5Q2217.0 -360.0 2235.0 -334.0Q2253.0 -308.0 2293.0 -308.0Q2334.0 -308.0 2352.0 -333.5Q2370.0 -359.0 2374.5 -400.0Q2379.0 -441.0 2379.0 -485.0V-1760.0H2721.0V-471.0Q2721.0 -231.0 2617.0 -107.5Q2513.0 16.0 2293.0 16.0ZM2856.0 0.0V-1760.0H3218.0L3380.0 -917.0V-1760.0H3720.0V0.0H3376.0L3200.0 -880.0V0.0ZM4286.0 16.0Q4095.0 16.0 3978.5 -103.0Q3862.0 -222.0 3862.0 -436.0V-1248.0Q3862.0 -1504.0 3963.5 -1640.0Q4065.0 -1776.0 4294.0 -1776.0Q4419.0 -1776.0 4516.5 -1730.0Q4614.0 -1684.0 4670.0 -1592.5Q4726.0 -1501.0 4726.0 -1362.0V-1058.0H4376.0V-1318.0Q4376.0 -1397.0 4356.0 -1424.5Q4336.0 -1452.0 4294.0 -1452.0Q4245.0 -1452.0 4228.0 -1416.5Q4211.0 -1381.0 4211.0 -1322.0V-441.0Q4211.0 -368.0 4232.5 -338.0Q4254.0 -308.0 4294.0 -308.0Q4339.0 -308.0 4357.5 -345.0Q4376.0 -382.0 4376.0 -441.0V-758.0H4730.0V-425.0Q4730.0 -193.0 4613.0 -88.5Q4496.0 16.0 4286.0 16.0ZM4847.0 0.0V-1760.0H5197.0V-1131.0H5363.0V-1760.0H5713.0V0.0H5363.0V-798.0H5197.0V0.0ZM6759.0 16.0Q6568.0 16.0 6451.5 -103.0Q6335.0 -222.0 6335.0 -436.0V-1248.0Q6335.0 -1504.0 6436.5 -1640.0Q6538.0 -1776.0 6767.0 -1776.0Q6892.0 -1776.0 6989.5 -1730.0Q7087.0 -1684.0 7143.0 -1592.5Q7199.0 -1501.0 7199.0 -1362.0V-1058.0H6849.0V-1318.0Q6849.0 -1397.0 6829.0 -1424.5Q6809.0 -1452.0 6767.0 -1452.0Q6718.0 -1452.0 6701.0 -1416.5Q6684.0 -1381.0 6684.0 -1322.0V-441.0Q6684.0 -368.0 6705.5 -338.0Q6727.0 -308.0 6767.0 -308.0Q6812.0 -308.0 6830.5 -345.0Q6849.0 -382.0 6849.0 -441.0V-758.0H7203.0V-425.0Q7203.0 -193.0 7086.0 -88.5Q6969.0 16.0 6759.0 16.0ZM7740.0 16.0Q7529.0 16.0 7417.5 -111.5Q7306.0 -239.0 7306.0 -480.0V-1316.0Q7306.0 -1542.0 7416.5 -1659.0Q7527.0 -1776.0 7740.0 -1776.0Q7953.0 -1776.0 8063.5 -1659.0Q8174.0 -1542.0 8174.0 -1316.0V-480.0Q8174.0 -239.0 8062.5 -111.5Q7951.0 16.0 7740.0 16.0ZM7743.0 -308.0Q7823.0 -308.0 7823.0 -463.0V-1322.0Q7823.0 -1452.0 7745.0 -1452.0Q7657.0 -1452.0 7657.0 -1319.0V-461.0Q7657.0 -379.0 7677.0 -343.5Q7697.0 -308.0 7743.0 -308.0ZM8316.0 0.0V-1760.0H8678.0L8840.0 -917.0V-1760.0H9180.0V0.0H8836.0L8660.0 -880.0V0.0ZM9487.0 0.0V-1422.0H9278.0V-1760.0H10048.0V-1422.0H9839.0V0.0ZM10146.0 0.0V-1760.0H10686.0Q10821.0 -1760.0 10890.0 -1698.5Q10959.0 -1637.0 10982.5 -1526.5Q11006.0 -1416.0 11006.0 -1267.0Q11006.0 -1123.0 10969.5 -1037.0Q10933.0 -951.0 10832.0 -918.0Q10915.0 -901.0 10948.5 -835.5Q10982.0 -770.0 10982.0 -666.0V0.0H10635.0V-689.0Q10635.0 -766.0 10603.5 -784.5Q10572.0 -803.0 10502.0 -803.0V0.0ZM10504.0 -1108.0H10589.0Q10662.0 -1108.0 10662.0 -1267.0Q10662.0 -1370.0 10646.0 -1402.0Q10630.0 -1434.0 10586.0 -1434.0H10504.0ZM11542.0 16.0Q11331.0 16.0 11219.5 -111.5Q11108.0 -239.0 11108.0 -480.0V-1316.0Q11108.0 -1542.0 11218.5 -1659.0Q11329.0 -1776.0 11542.0 -1776.0Q11755.0 -1776.0 11865.5 -1659.0Q11976.0 -1542.0 11976.0 -1316.0V-480.0Q11976.0 -239.0 11864.5 -111.5Q11753.0 16.0 11542.0 16.0ZM11545.0 -308.0Q11625.0 -308.0 11625.0 -463.0V-1322.0Q11625.0 -1452.0 11547.0 -1452.0Q11459.0 -1452.0 11459.0 -1319.0V-461.0Q11459.0 -379.0 11479.0 -343.5Q11499.0 -308.0 11545.0 -308.0ZM12118.0 0.0V-1760.0H12470.0V-300.0H12832.0V0.0Z" /></g></g>
+    <clipPath id="above"><rect x="0" y="0" width="1600" height="330"/></clipPath>
+    <clipPath id="below"><rect x="0" y="330" width="1600" height="190"/></clipPath>
+    <clipPath id="frame"><rect width="1600" height="520"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1600" height="330" fill="#0D0F12"/>
+    <g fill="#EDE6DA"><circle cx="526" cy="315" r="1.0" fill-opacity="0.12"/><circle cx="1" cy="217" r="0.8" fill-opacity="0.2"/><circle cx="1169" cy="163" r="1.3" fill-opacity="0.2"/><circle cx="868" cy="203" r="1.0" fill-opacity="0.2"/><circle cx="553" cy="266" r="0.8" fill-opacity="0.2"/><circle cx="268" cy="186" r="1.3" fill-opacity="0.12"/><circle cx="839" cy="95" r="1.3" fill-opacity="0.3"/><circle cx="519" cy="289" r="0.8" fill-opacity="0.12"/><circle cx="950" cy="150" r="1.0" fill-opacity="0.12"/><circle cx="1212" cy="104" r="1.0" fill-opacity="0.12"/><circle cx="1388" cy="302" r="1.3" fill-opacity="0.2"/><circle cx="978" cy="109" r="1.3" fill-opacity="0.2"/><circle cx="1040" cy="126" r="1.3" fill-opacity="0.12"/><circle cx="1354" cy="127" r="1.3" fill-opacity="0.12"/><circle cx="284" cy="244" r="1.0" fill-opacity="0.2"/><circle cx="1503" cy="194" r="1.3" fill-opacity="0.2"/><circle cx="557" cy="91" r="1.3" fill-opacity="0.3"/><circle cx="406" cy="71" r="1.0" fill-opacity="0.12"/><circle cx="358" cy="244" r="0.8" fill-opacity="0.12"/><circle cx="1456" cy="94" r="1.3" fill-opacity="0.12"/><circle cx="758" cy="263" r="1.0" fill-opacity="0.2"/><circle cx="4" cy="127" r="1.3" fill-opacity="0.12"/><circle cx="478" cy="181" r="0.8" fill-opacity="0.2"/><circle cx="1099" cy="127" r="1.0" fill-opacity="0.12"/><circle cx="433" cy="270" r="0.8" fill-opacity="0.12"/><circle cx="452" cy="163" r="1.3" fill-opacity="0.12"/><circle cx="1452" cy="79" r="1.3" fill-opacity="0.2"/><circle cx="486" cy="168" r="1.3" fill-opacity="0.12"/><circle cx="615" cy="224" r="1.0" fill-opacity="0.12"/><circle cx="794" cy="142" r="1.0" fill-opacity="0.2"/><circle cx="228" cy="143" r="0.8" fill-opacity="0.2"/><circle cx="994" cy="159" r="1.0" fill-opacity="0.2"/><circle cx="1436" cy="87" r="1.3" fill-opacity="0.3"/><circle cx="1543" cy="204" r="1.3" fill-opacity="0.2"/><circle cx="1575" cy="90" r="0.8" fill-opacity="0.12"/><circle cx="1145" cy="251" r="1.0" fill-opacity="0.12"/><circle cx="1161" cy="230" r="1.3" fill-opacity="0.3"/><circle cx="185" cy="71" r="1.3" fill-opacity="0.3"/><circle cx="921" cy="50" r="1.3" fill-opacity="0.2"/><circle cx="103" cy="156" r="1.3" fill-opacity="0.3"/><circle cx="273" cy="74" r="1.0" fill-opacity="0.12"/><circle cx="1169" cy="273" r="1.0" fill-opacity="0.3"/><circle cx="7" cy="109" r="1.3" fill-opacity="0.12"/><circle cx="277" cy="244" r="1.0" fill-opacity="0.2"/><circle cx="829" cy="217" r="1.3" fill-opacity="0.3"/><circle cx="817" cy="147" r="1.3" fill-opacity="0.12"/><circle cx="679" cy="209" r="1.3" fill-opacity="0.12"/><circle cx="1069" cy="133" r="1.3" fill-opacity="0.3"/><circle cx="1107" cy="311" r="0.8" fill-opacity="0.2"/><circle cx="1374" cy="149" r="0.8" fill-opacity="0.3"/><circle cx="476" cy="295" r="0.8" fill-opacity="0.12"/><circle cx="1199" cy="131" r="1.0" fill-opacity="0.2"/><circle cx="1518" cy="184" r="0.8" fill-opacity="0.2"/><circle cx="631" cy="161" r="0.8" fill-opacity="0.2"/><circle cx="137" cy="198" r="1.3" fill-opacity="0.12"/><circle cx="1172" cy="134" r="0.8" fill-opacity="0.12"/><circle cx="733" cy="243" r="0.8" fill-opacity="0.3"/><circle cx="1418" cy="314" r="1.0" fill-opacity="0.3"/><circle cx="233" cy="196" r="0.8" fill-opacity="0.3"/><circle cx="1433" cy="207" r="1.0" fill-opacity="0.3"/><circle cx="1369" cy="258" r="1.3" fill-opacity="0.3"/><circle cx="159" cy="148" r="1.0" fill-opacity="0.12"/><circle cx="1377" cy="115" r="0.8" fill-opacity="0.2"/><circle cx="405" cy="189" r="1.3" fill-opacity="0.2"/><circle cx="1066" cy="146" r="0.8" fill-opacity="0.3"/><circle cx="1297" cy="203" r="0.8" fill-opacity="0.12"/><circle cx="1154" cy="200" r="1.0" fill-opacity="0.2"/><circle cx="546" cy="141" r="1.3" fill-opacity="0.2"/><circle cx="1207" cy="255" r="1.0" fill-opacity="0.2"/><circle cx="1595" cy="105" r="1.0" fill-opacity="0.3"/></g>
+    <g stroke="#EDE6DA"><line x1="0" y1="28" x2="1600" y2="28" stroke-opacity="0.07"/><line x1="100" y1="20" x2="100" y2="36" stroke-opacity="0.2"/><line x1="200" y1="24" x2="200" y2="32" stroke-opacity="0.1"/><line x1="300" y1="24" x2="300" y2="32" stroke-opacity="0.1"/><line x1="400" y1="20" x2="400" y2="36" stroke-opacity="0.2"/><line x1="500" y1="24" x2="500" y2="32" stroke-opacity="0.1"/><line x1="600" y1="24" x2="600" y2="32" stroke-opacity="0.1"/><line x1="700" y1="20" x2="700" y2="36" stroke-opacity="0.2"/><line x1="800" y1="24" x2="800" y2="32" stroke-opacity="0.1"/><line x1="900" y1="24" x2="900" y2="32" stroke-opacity="0.1"/><line x1="1000" y1="20" x2="1000" y2="36" stroke-opacity="0.2"/><line x1="1100" y1="24" x2="1100" y2="32" stroke-opacity="0.1"/><line x1="1200" y1="24" x2="1200" y2="32" stroke-opacity="0.1"/><line x1="1300" y1="20" x2="1300" y2="36" stroke-opacity="0.2"/><line x1="1400" y1="24" x2="1400" y2="32" stroke-opacity="0.1"/><line x1="1500" y1="24" x2="1500" y2="32" stroke-opacity="0.1"/></g>
+    <g transform="translate(100 104)">
+      <path d="M0 0 C8 8 11 18 11 32 L-11 32 C-11 18 -8 8 0 0 Z" fill="none" stroke="#E8A33D" stroke-width="2.4"/>
+      <line x1="-30" y1="38" x2="30" y2="38" stroke="#E8A33D" stroke-width="2.4"/>
+    </g>
+    <g font-family="'Helvetica Neue', Helvetica, 'Segoe UI', sans-serif">
+      <text x="152" y="118" fill="#E8A33D" font-size="15" letter-spacing="5.5" font-weight="600">ONBOARDING &amp; DELIVERY KIT</text>
+      <text x="152" y="146" fill="#6E6257" font-size="15" letter-spacing="1.2">Onboard a repository once, then launch every ticket in it.</text>
+    </g>
+    <path d="M1196 330 Q1470 300 1548 66" fill="none" stroke="#E8A33D" stroke-opacity="0.7" stroke-width="1.6" stroke-dasharray="2 7" stroke-linecap="round"/>
+    <circle cx="1325.2" cy="300.6" r="4.5" fill="#0D0F12" stroke="#E8A33D" stroke-width="2"/>
+    <text x="1309.2" y="305.6" text-anchor="end" font-family="'Helvetica Neue', Helvetica, 'Segoe UI', sans-serif" font-size="14" letter-spacing="2" fill="#8A7C6C">/onboard</text>
+    <circle cx="1447.9" cy="226.6" r="4.5" fill="#0D0F12" stroke="#E8A33D" stroke-width="2"/>
+    <text x="1431.9" y="231.6" text-anchor="end" font-family="'Helvetica Neue', Helvetica, 'Segoe UI', sans-serif" font-size="14" letter-spacing="2" fill="#8A7C6C">/launch-ticket</text>
+    <circle cx="1530.4" cy="110.8" r="4.5" fill="#0D0F12" stroke="#E8A33D" stroke-width="2"/>
+    <text x="1514.4" y="115.8" text-anchor="end" font-family="'Helvetica Neue', Helvetica, 'Segoe UI', sans-serif" font-size="14" letter-spacing="2" fill="#8A7C6C">/launch-backlog</text>
+    <circle cx="1548" cy="66" r="3" fill="#E8A33D"/>
+    <rect x="0" y="330" width="1600" height="190" fill="url(#deck)"/><rect x="0" y="330" width="1600" height="190" fill="url(#h1)"/>
+    <rect x="0" y="420" width="1600" height="100" fill="url(#h3)"/>
+    <line x1="0" y1="372" x2="1600" y2="372" stroke="#EDE6DA" stroke-opacity="0.06"/>
+    <line x1="0" y1="420" x2="1600" y2="420" stroke="#EDE6DA" stroke-opacity="0.06"/>
+    <line x1="0" y1="470" x2="1600" y2="470" stroke="#EDE6DA" stroke-opacity="0.06"/>
+    <path d="M133.0 372 L167.0 372 Q181 447 201 522 L99 522 Q119 447 133.0 372 Z" fill="url(#plume)"/>
+    <path d="M305.0 372 L331.0 372 Q341 424 357 476 L279 476 Q295 424 305.0 372 Z" fill="url(#plume)"/>
+    <path d="M466.0 372 L506.0 372 Q522 462 546 552 L426 552 Q450 462 466.0 372 Z" fill="url(#plume)"/>
+    <path d="M642.0 372 L666.0 372 Q676 415 690 458 L618 458 Q632 415 642.0 372 Z" fill="url(#plume)"/>
+    <path d="M804.0 372 L840.0 372 Q854 452 876 532 L768 532 Q790 452 804.0 372 Z" fill="url(#plume)"/>
+    <path d="M976.0 372 L1004.0 372 Q1015 432 1032 492 L948 492 Q965 432 976.0 372 Z" fill="url(#plume)"/>
+    <path d="M1109.0 372 L1131.0 372 Q1140 418 1153 464 L1087 464 Q1100 418 1109.0 372 Z" fill="url(#plume)"/>
+    <use xlink:href="#wm" href="#wm" fill="#EDE6DA" clip-path="url(#above)"/>
+    <use xlink:href="#wm" href="#wm" fill="url(#ignite)" clip-path="url(#below)"/>
+    <line x1="0" y1="330" x2="1600" y2="330" stroke="#EDE6DA" stroke-opacity="0.9" stroke-width="2"/>
+    <g font-family="'Helvetica Neue', Helvetica, 'Segoe UI', sans-serif" font-size="13" letter-spacing="3">
+      <text x="1200" y="362" fill="#8A7C6C" font-size="11">GO / NO-GO</text>
+      <circle cx="1200" cy="392" r="2.5" fill="#E8A33D"/><line x1="1210" y1="392" x2="1250" y2="392" stroke="#E8A33D" stroke-opacity="0.45"/>
+      <text x="1262" y="396" fill="#EDE6DA">CHECKS</text><text x="1520" y="396" text-anchor="end" fill="#E8A33D" font-weight="600">GO</text>
+      <circle cx="1200" cy="426" r="2.5" fill="#E8A33D"/><line x1="1210" y1="426" x2="1250" y2="426" stroke="#E8A33D" stroke-opacity="0.45"/>
+      <text x="1262" y="430" fill="#EDE6DA">REVIEW</text><text x="1520" y="430" text-anchor="end" fill="#E8A33D" font-weight="600">GO</text>
+      <circle cx="1200" cy="460" r="2.5" fill="#E8A33D"/><line x1="1210" y1="460" x2="1250" y2="460" stroke="#E8A33D" stroke-opacity="0.45"/>
+      <text x="1262" y="464" fill="#EDE6DA">MERGE</text><text x="1520" y="464" text-anchor="end" fill="#E8A33D" font-weight="600">GO</text>
+      <circle cx="1200" cy="494" r="2.5" fill="#E8A33D"/><line x1="1210" y1="494" x2="1250" y2="494" stroke="#E8A33D" stroke-opacity="0.45"/>
+      <text x="1262" y="498" fill="#EDE6DA">BACKLOG DONE</text><text x="1520" y="498" text-anchor="end" fill="#E8A33D" font-weight="600">GO</text>
+    </g>
+  </g>
+</svg>

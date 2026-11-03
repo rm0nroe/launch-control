@@ -1,0 +1,31 @@
+Launch Control
+Copyright 2026 Ryan Monroe
+
+Launch Control's original materials are licensed under the Apache License, Version 2.0.
+See the LICENSE file for the full terms.
+
+This distribution also contains third-party or separately licensed material.
+Retain the notices shipped with those components when redistributing them.
+
+The research-codebase skill and the surveyor, navigator, veteran, technician, and
+integrator agents are adapted from the Apache-2.0-licensed
+https://github.com/humanlayer/humanlayer project:
+
+- HumanLayer, Copyright 2025-2026 QueryTale, Inc. d/b/a HumanLayer
+
+Launch Control renamed and modified these files:
+
+- skills/research-codebase/
+- agents/surveyor.md, agents/navigator.md, agents/veteran.md,
+  agents/technician.md, agents/integrator.md
+
+The onboard HTML report template (skills/onboard/assets/completion-report.html)
+embeds Anton, Barlow Condensed, and IBM Plex Mono, each licensed under
+the SIL Open Font License 1.1. These fonts ship with the default onboard skill.
+Full copyright and license notices are in skills/onboard/assets/ANTON-OFL.txt,
+skills/onboard/assets/BARLOW-OFL.txt, and skills/onboard/assets/IBMPlexMono-OFL.txt.
+The template and generated standalone HTML retain those notices in their
+font-licenses template block.
+
+The component boundary and reviewed sources are documented in PROVENANCE.md. This
+NOTICE does not remove, replace, or broaden any third-party license terms.

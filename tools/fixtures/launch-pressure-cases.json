@@ -1,0 +1,13 @@
+{
+  "cases": [
+    { "signal": "fuzzy", "trigger": true },
+    { "signal": "large", "trigger": true },
+    { "signal": "irreversible", "trigger": true },
+    { "signal": "security-sensitive", "trigger": true },
+    { "signal": "explicit-request", "trigger": true },
+    { "signal": "clear-fix", "trigger": false },
+    { "signal": "polish", "trigger": false },
+    { "signal": "chore", "trigger": false },
+    { "signal": "one-line", "trigger": false }
+  ]
+}

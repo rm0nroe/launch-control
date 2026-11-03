@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "selected": "web",
+      "run": ["Web", "Feature flags", "AI evaluation contract"],
+      "capabilities": ["Feature flags", "AI evaluation contract"],
+      "reject": ["iOS", "Android", "Backend", "Shared", "General or unknown"]
+    },
+    {
+      "selected": "backend",
+      "run": ["Backend"],
+      "reject": ["iOS", "Android", "Web", "Shared", "General or unknown"]
+    },
+    {
+      "selected": "mobile-iOS",
+      "run": ["iOS"],
+      "reject": ["Android", "Web", "Backend", "Shared", "General or unknown"]
+    },
+    {
+      "selected": "mobile-Android",
+      "run": ["Android"],
+      "reject": ["iOS", "Web", "Backend", "Shared", "General or unknown"]
+    },
+    {
+      "selected": "shared",
+      "run": ["Shared", "Web", "Backend"],
+      "affectedConsumers": ["Web", "Backend"],
+      "reject": ["iOS", "Android", "General or unknown"]
+    },
+    {
+      "selected": "general",
+      "run": ["General or unknown"],
+      "reject": ["iOS", "Android", "Web", "Backend", "Shared"]
+    }
+  ]
+}

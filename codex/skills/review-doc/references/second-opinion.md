@@ -1,0 +1,1 @@
+For an optional independent second opinion, use an available native reviewer role only when delegation is authorized. Do not launch a Claude plugin or claim a different model family without observing it. Merge returned findings before Step 4, preserving disagreements. If unavailable, perform the main review and report that no independent second opinion ran.
